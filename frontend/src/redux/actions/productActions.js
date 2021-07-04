@@ -15,14 +15,14 @@ export const getProducts = () => async (dispatch) => {
     dispatch({
       type: actionTypes.GET_PRODUCTS_FAIL,
       payload:
-        error.response && error.response.data.message
-          ? error.response.dat.message
-          : error.message,
+        error.response && error.response.data.massage
+          ? error.response.dat.massage
+          : error.massage,
     });
   }
 };
 
-export const getProductsDetails = (id) => async (dispatch) => {
+export const getProductDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: actionTypes.GET_PRODUCT_DETAILS_REQUEST });
 
@@ -36,9 +36,9 @@ export const getProductsDetails = (id) => async (dispatch) => {
     dispatch({
       type: actionTypes.GET_PRODUCT_DETAILS_FAIL,
       payload:
-        error.response && error.response.data.message
-          ? error.response.dat.message
-          : error.message,
+        error.response && error.response.data.massage
+          ? error.response.dat.massage
+          : error.massage,
     });
   }
 };
